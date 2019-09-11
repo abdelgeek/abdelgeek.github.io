@@ -158,10 +158,10 @@ img::-moz-selection {
 
 #mainNav .navbar-nav .nav-item .nav-link {
   font-size: 90%;
-  font-weight: 400;
+  font-weight: 700;
   padding: 0.75em 0;
   letter-spacing: 1px;
-  color: white;
+  color: rgba(0,0,0,.8) !important;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
@@ -197,14 +197,18 @@ img::-moz-selection {
   }
 }
 
+
 header.masthead {
-  text-align: center;
-  color: white;
-  background-image: url("../img/header-bg.jpg");
+  
+  background-image: url("../img/big_triangle.jpg");
   background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
   background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  visibility: inherit;
+  z-index: 20;
 }
 
 header.masthead .intro-text {
@@ -212,13 +216,38 @@ header.masthead .intro-text {
   padding-bottom: 100px;
 }
 
-header.masthead .intro-text .intro-lead-in {
-  font-size: 22px;
-  font-style: italic;
-  line-height: 22px;
-  margin-bottom: 25px;
-  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+header.masthead .intro-text .ul-details li{
+  transition: none 0s ease 0s;
+  text-align: left;
+  line-height: 45px;
+  border-width: 0px;
+  margin: 0px;
+  padding: 0px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-size: 26px;
+  color: #0062cc;
 }
+header.masthead .intro-text .intro-lead-in {
+  z-index: 7;
+ 
+  white-space: normal;
+  font-size: 49px !important;
+  line-height: 59px;
+  font-weight: 900;
+  color: #0062cc;
+  visibility: inherit;
+  transition: none 0s ease 0s;
+  text-align: center;
+  border-width: 0px;
+  margin: 0px;
+  padding: 0px;
+  letter-spacing: -2px;
+  min-height: 91px;
+  max-height: 91px;
+  opacity: 1;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transform-origin: 50% 50% 0px;}
 
 header.masthead .intro-text .intro-heading {
   font-size: 50px;
@@ -234,10 +263,12 @@ header.masthead .intro-text .intro-heading {
     padding-bottom: 200px;
   }
   header.masthead .intro-text .intro-lead-in {
+    min-width: 534px;
+    max-width: 534px;
     font-size: 40px;
     font-style: italic;
-    line-height: 40px;
-    margin-bottom: 25px;
+    line-height: 10px;
+    margin-bottom: 0;
     font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
   header.masthead .intro-text .intro-heading {
@@ -716,4 +747,34 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .bg-overlay{
   background: #00000075;
+}
+
+.btn-get-started{
+  z-index: 9;
+    background: url(../img/blueGEOMETRIC.png) center center / cover no-repeat rgb(25, 125, 54);
+    white-space: nowrap;
+
+    line-height: 9px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    font-family: Lato;
+    border-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    outline: none;
+    box-shadow: rgb(153, 153, 153) 0px 0px 0px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    visibility: inherit;
+    transition: none 0s ease 0s;
+    text-align: inherit;
+    margin: 0px;
+    padding: 7px 20px;
+    letter-spacing: 0px;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform-origin: 50% 50% 0px;
 }
